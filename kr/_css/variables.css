@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-background: #ffffff;
+  --color-pink: #D73670;
+  --color-green : #4D6341;
+  --color-gray1: #E2E2E2;
+  --color-gray2: #929292;
+  --color-gray3: #767676;
+  --color-gray4: #707070;
+  --color-light-gray: #F1F1F5;
+  --color-light-gray2: #CECECE;
+
+  /* text-color */
+  --main-font-color: #111111;
+
+  /* box shadow */
+  --box-shadow1: 6px 3px 5px #00000008;
+  --box-shadow2: 0 2px 2px #00000008;
+
+  /* Font */
+  --primary-font: "Pretendard";
+}

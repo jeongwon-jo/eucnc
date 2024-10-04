@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이유씨엔씨-스타일 가이드</title>
+  <!-- Favicon -->
+  <link rel="icon" href="/_img/common/favicon.ico">
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="이유씨엔씨" />
+  <meta property="og:description" content="이유씨엔씨" />
+  <meta property="og:image" content="/_img/common/opengraph.png" />
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- fullpage.js -->
+  <script src="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.4/dist/jquery.fullpage.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.4/dist/jquery.fullpage.min.css" rel="stylesheet" />
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="/kr/_css/common.css">
+  <script src="/kr/_js/common.js" defer></script>
+  <style>
+    .style_content {
+      margin: 40px 0;
+    }
+
+    .style_content h3 {
+      margin-bottom: 14px;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    .style_content h5 {
+      margin-bottom: 14px;
+      font-weight: 560;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="header__inner">
+        <ul class="gnb">
+          <button type="button" class="btn_menu"></button>
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">제품소개</a></li>
+          <li><a href="#">기업소식</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+        <a href="#" class="logo"></a>
+        <ul class="lang">
+          <li class="kr"><a href="#">KOR</a></li>
+          <li class="en"><a href="#">ENG</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="menu-title menu1">
+        <div class="menu-title__inner">
+          <div class="title">
+            <h1 class="tit">제품소개</h1>
+            <span class="sub">Global No.1 Paint EUCNC</span>
+          </div>
+          <ul class="breadcrumb">
+            <li class="home"></li>
+            <li>제품소개</li>
+            <li>인사말</li>
+          </ul>
+          <div class="sub-menu">
+            <ul class="submenu_list">
+              <li class="active"><a href="./greetings.php">인사말</a></li>
+              <li><a href="./greetings.php">조직도</a></li>
+              <li><a href="./greetings.php">사업연혁</a></li>
+              <li><a href="./greetings.php">ESG 경영</a></li>
+              <li><a href="./greetings.php">시설소개</a></li>
+            </ul> 
+          </div>
+        </div>
+      </div>
+      <div class="container mt100">
+        <div class="style_content">
+          <h3>Button</h3>
+          <button type="button" class="btn btn-md gray">검색</button>
+          <button type="button" class="btn btn-md white">목록</button>
+          <button type="button" class="btn btn-md gray">이전</button>
+          <button type="button" class="btn btn-md pink">다음</button>
+          <h5 class="mt20">- 버튼 오른쪽 정렬</h5>
+          <div class="btn-area right">
+            <button type="button" class="btn btn-md gray">취소</button>
+            <button type="button" class="btn btn-md pink">등록</button>
+          </div>
+          <h5 class="mt20">- 버튼 균형 정렬</h5>
+          <div class="btn-area between">
+            <button type="button" class="btn btn-md white">목록</button>
+            <div>
+              <button type="button" class="btn btn-md gray">삭제</button>
+              <button type="button" class="btn btn-md pink">수정</button>
+            </div>
+          </div>
+        </div>
+        <div class="style_content">
+          <h3>Pagination</h3>
+          <ul class="pagination">
+            <li class="btn_prev"><a href="#"></a></li>
+            <li class="page active"><a href="#">1</a></li>
+            <li class="page"><a href="#">2</a></li>
+            <li class="page"><a href="#">3</a></li>
+            <li class="page"><a href="#">4</a></li>
+            <li class="page"><a href="#">5</a></li>
+            <li class="page"><a href="#">6</a></li>
+            <li class="page"><a href="#">7</a></li>
+            <li class="page"><a href="#">8</a></li>
+            <li class="btn_next"><a href="#"></a></li>
+          </ul>
+        </div>
+        <div class="style_content">
+          <h3>Modal</h3>
+          <button type="button" class="btn btn-md gray" onclick="openModal('test-modal')">모달 열기</button>
+        </div>
+        <div class="style_content">
+          <h3>Form</h3>
+          <div class="cm_title mb40">
+            <h3 class="title">온라인 문의</h3>
+            <p>궁금하신 사항이 있으실 경우 언제든지 문의주시면 신속히 확인해서 답변 드리겠습니다.</p>
+          </div>
+          <select id="select" class="custom-select select-primary w200">
+            <option>전체</option>
+            <option value="1">제목</option>
+            <option value="2">내용</option>
+            <option value="3">작성자</option>
+          </select>
+          <input type="text" placeholder="검색어를 입력해 주세요.">
+          <div class="upload_file mt10">
+            <label for="file">파일 선택</label>
+            <input type="file" id="file" multiple>
+            <div class="select_filelist"></div>
+          </div>
+          <div class="upload_filelist mt10">
+            <div class="file">
+              <div class="file-info">
+                <b>첨부된 파일</b>
+                <a href="#">페인트 문의 한글.jpg</a>
+                <span class="size">71.4KB</span>
+              </div>
+              <a href="#" class="btn_download"></a>
+            </div>
+          </div>
+          <h3 class="mt40">Search Form</h3>
+          <form action="" method="get" class="search_form">
+            <fieldset>
+              <legend>온라인 문의 목록 검색 폼</legend>
+              <div class="search__inner">
+                <span class="total-cnt">전체 (<b>6</b>건)</span>
+                <div class="search_input">
+                  <select id="select" class="custom-select select-primary w140">
+                    <option>전체</option>
+                    <option value="1">제목</option>
+                    <option value="2">내용</option>
+                    <option value="3">작성자</option>
+                  </select>
+                  <input type="text" placeholder="검색어를 입력해 주세요.">
+                  <button type="button" class="btn btn-md gray">검색</button>
+                </div>
+                <select id="select" class="custom-select select-primary w160">
+                  <option>10개씩 보기</option>
+                  <option>20개씩 보기</option>
+                  <option>30개씩 보기</option>
+                </select>
+              </div>
+            </fieldset>
+          </form>
+          <h3 class="mt40">Register Form</h3>
+          <form action="" method="post" class="register_form">
+            <fieldset>
+              <legend>온라인 문의 등록 폼</legend>
+              <div class="register_table">
+                <ul class="row">
+                  <li class="tit">제목</li>
+                  <li class="desc">
+                    <input type="text" placeholder="제목을 입력해 주세요." class="w100p">
+                    <!-- <span class="err-txt">제목을 입력해 주세요.</span> -->
+                  </li>
+                </ul>
+                <ul class="row flex-row">
+                  <ul class="row-item">
+                    <li class="tit">작성자</li>
+                    <li class="desc">
+                      <input type="text" placeholder="작성자명을 입력해 주세요." class="w100p">
+                      <!-- <span class="err-txt">작성자명을 입력해 주세요.</span> -->
+                    </li>
+                  </ul>
+                  <ul class="row-item">
+                    <li class="tit">비밀번호</li>
+                    <li class="desc">
+                      <input type="password" placeholder="비밀번호를 입력해 주세요." class="w100p">
+                      <!-- <span class="err-txt">비밀번호를 입력해 주세요.</span> -->
+                    </li>
+                  </ul>
+                </ul>
+                <ul class="row">
+                  <li class="tit">문의 내용</li>
+                  <li class="desc">
+                    <textarea placeholder="문의 내용을 입력해 주세요." class="w100p"></textarea>
+                    <!-- <span class="err-txt">문의 내용을 입력해 주세요.</span> -->
+                  </li>
+                </ul>
+                <ul class="row file">
+                  <li class="tit">파일 첨부</li>
+                  <li class="desc">
+                    <div class="upload_file">
+                      <label for="file2">파일 선택</label>
+                      <input type="file" id="file2" multiple>
+                      <div class="select_filelist"></div>
+                    </div>
+                    <div class="file_txt">
+                      <span>* 첨부파일은 최대 5개까지 등록 가능합니다.</span>
+                      <span>* 첨부파일은 5MB 이하의 파일만 가능합니다.</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </form>
+          <h3 class="mt40">Input Password</h3>
+          <form action="" method="post" class="check-pwd_form">
+            <fieldset>
+              <legend>비밀번호 검사 폼</legend>
+              <div class="check-pwd__inner">
+                <span>작성 시 입력한 비밀번호를 입력해 주세요.</span>
+                <div class="input_wrap">
+                  <label for="pwd">비밀번호</label>
+                  <div class="input">
+                    <input type="password" placeholder="비밀번호를 입력해 주세요.">
+                    <!-- <span class="err-txt">비밀번호를 입력해 주세요.</span> -->
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          <h3 class="mt40">Detail Form</h3>
+          <div class="dtl_container">
+            <div class="title">
+              <div class="title_area">
+                <b>제목</b>
+                이유씨엔씨 페인트 관련 온라인 문의드립니다.<span class="badge wait">답변대기</span>
+              </div>
+              <ul class="reg-info">
+                <li><b>작성자</b>홍길동</li>
+                <li><b>작성일</b>2023.07.04</li>
+              </ul>
+            </div>
+            <div class="cnts">
+              <b>문의 내용</b>
+              <div class="contents">
+                이유씨엔씨 페인트 제품을 구매 또는 거래하고 싶습니다.<br>
+                제품 가격과 소량으로 구매가 가능한지 알수있을까요?
+              </div>
+              <div class="upload_filelist mt10">
+                <div class="file">
+                  <div class="file-info">
+                    <b>첨부된 파일</b>
+                    <a href="#">페인트 문의 한글.jpg</a>
+                    <span class="size">71.4KB</span>
+                  </div>
+                  <a href="#" class="btn_download"></a>
+                </div>
+                <div class="file">
+                  <div class="file-info">
+                    <b>첨부된 파일</b>
+                    <a href="#">페인트 문의 한글.jpg</a>
+                    <span class="size">71.4KB</span>
+                  </div>
+                  <a href="#" class="btn_download"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="answer_container">
+            <div class="answer__inner">
+              <span class="name">이유씨엔씨 관리자</span>
+              <div class="contents">
+                안녕하세요. 친환경 에너지 세이빙 도료 전문기업 EUCNC 입니다.<br>
+                먼저 EUCNC를 찾아주셔서 감사합니다.<br><br>
+                구매 및 거래 관련 문의 사항은 유선 상담을 통해 안내드리고있습니다.<br>
+                하단 연락처로 연락 주시면 따로 방문하지 않으셔도 유선 상담으로 더욱 자세한 상담 받으실 수 있습니다.<br><br>
+                이 외에 궁금하신 사항이 있으실 경우 언제든지 문의주시면 신속히 확인해서 답변 드리겠습니다.<br>
+                감사합니다.<br><br>
+                TEL. 032&#41;566-0650
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="style_content">
+          <h3>Table</h3>
+          <div class="primary-table">
+            <table>
+              <colgroup>
+                <col style="width: 15%">
+                <col style="width: 55%">
+                <col style="width: 10%">
+                <col style="width: 10%">
+                <col style="width: 10%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>번호</th>
+                  <th>제목</th>
+                  <th>답변상태</th>
+                  <th>작성자</th>
+                  <th>작성일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10</td>
+                  <td>
+                    <a href="#" class="table_title lock">
+                      <span>안녕하세요. 온라인 문의 드립니다. 제목 TEXT 제목 안녕하세요. 온라인 문의 드립니다. 제목 TEXT 제목TEXT</span>
+                    </a>
+                  </td>
+                  <td><span class="badge wait">답변대기</span></td>
+                  <td>홍길동</td>
+                  <td>2023.07.04</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="style_content">
+          <h3>Badge</h3>
+          <span class="badge wait">답변대기</span>
+          <span class="badge complete">답변완료</span>
+        </div>
+        <div class="style_content">
+          <h3>Item</h3>
+          <div class="flex-js-as gap15">
+            <div class="doc_item">
+              <div class="thum" onclick="openModal('modal_show-doc')">
+                <img src="/_img/item_thumb.png" alt="임시 썸네일">
+              </div>
+              <div class="desc">
+                <h3 class="tit">차열 또는 단열 도료 조성물</h3>
+                <p>특허 이미지에 대한 설명이 들어갈 텍스트 공간입니다. text text text</p>
+                <span class="no">10-2019-0154617</span>
+              </div>
+            </div>
+            <div class="card_item">
+              <div class="thum">
+                <img src="/_img/item_thumb3.png" alt="임시 썸네일">
+              </div>
+              <div class="desc">
+                <h3 class="tit">2023 소재˙부품˙장비 스타트업 100 기업 선정</h3>
+                <span class="date">2023. 07. 04</span>
+              </div>
+            </div>
+            <div class="card_item small">
+              <div class="thum">
+                <img src="/_img/item_thumb3.png" alt="임시 썸네일">
+              </div>
+              <div class="desc">
+                <h3 class="tit">프로젝트 내용 텍스트 텍스트 시공사례</h3>
+              </div>
+            </div>
+            <div class="card_item video">
+              <div class="thum">
+                <img src="/_img/item_thumb4.png" alt="임시 썸네일">
+              </div>
+              <div class="desc">
+                <h3 class="tit">[K스타트업, CEO를 만나다]<br>
+                "특수 도료 개발로 페인트도 탄소 낮춰요"</h3>
+                <span class="date">2023. 07. 04</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__inner">
+        <div class="logo-area">
+          <a href="#" class="logo_white"></a>
+          <p>주식회사 이유씨엔씨는 친환경 에너지 세이빙 도료 전문기업으로써<br>
+          특수 도료를 연구개발하고 생산, 판매까지 하고 있으며, 세계적 당면과제인<br>
+          “탄소중립시대”에 맞는 기술강소기업입니다.</p>
+        </div>
+        <div class="footer-gnb">
+          <ul>
+            <li class="tit">EUCNC</li>
+            <li><a href="#">메인</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">제품소개</a></li>
+            <li><a href="#">기업소식</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="company-info">
+          <div class="company-info__inner">
+            <ul class="lang">
+              <li class="kr"><a href="#">KOR</a></li>
+              <li class="en"><a href="#">ENG</a></li>
+            </ul>
+            <p>대표이사 : 최장식</p>
+            <p class="tel mt10">Tel : 032&#41;566-0650 <span>Fax : 032&#41;568-0651</span></p>
+            <p class="address mt10">주소지 : 인천서구 경서진로 410, 환경산업연구단지 D동 208호</p>
+            <p class="copyright mt30">Copyright © 2023 EUCNC. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="test-modal" class="modal">
+      <div class="modal__inner">
+        <div class="close-modal">
+          <button type="button" class="btn_close-modal" onclick="closeModal('test-modal')"></button>
+        </div>
+        <div class="modal__contents"></div>
+      </div>
+    </div>
+    <div id="modal_show-doc" class="modal modal_show_doc">
+      <div class="modal__inner">
+        <div class="close-modal">
+          <button type="button" class="btn_close-modal" onclick="closeModal('modal_show-doc')"></button>
+        </div>
+        <div class="modal__contents">
+          <div class="thumbnail_cnts">
+            <img src="/_img/item_thumb2.png" alt="임시 썸네일">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $("#file").on("change", function () {
+      if (window.FileReader) {
+        var filename = $(this)[0].files[0].name;
+      } else {
+        var filename = $(this).val().split('/').pop().split('\\').pop();
+      }
+      let inputTag = `<span class="upload_name">${filename}<button type="button" class="btn_delete-file"></button></span>`
+      $('.select_filelist').append(inputTag)
+
+      $('.btn_delete-file').click(function () {
+        $(this).parents('.upload_name').remove()
+      })
+    });
+
+    $("#file2").on("change", function () {
+      if (window.FileReader) {
+        var filename = $(this)[0].files[0].name;
+      } else {
+        var filename = $(this).val().split('/').pop().split('\\').pop();
+      }
+      let inputTag = `<span class="upload_name">${filename}<button type="button" class="btn_delete-file"></button></span>`
+      $('.select_filelist').append(inputTag)
+
+      $('.btn_delete-file').click(function () {
+        $(this).parents('.upload_name').remove()
+      })
+    });
+  </script>
+</body>
+</html>

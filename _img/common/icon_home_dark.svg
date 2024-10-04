@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="그룹_715" data-name="그룹 715" transform="translate(0 0.292)">
+    <g id="그룹_716" data-name="그룹 716" transform="translate(4.001 4)">
+      <g id="패스_5184" data-name="패스 5184" transform="translate(5177 -568)" fill="none" stroke-miterlimit="10">
+        <path d="M-5169,568l-8,6.667h1.336v8.666A.665.665,0,0,0-5175,584h12a.672.672,0,0,0,.672-.667v-8.666H-5161Z" stroke="none"/>
+        <path d="M -5169 570.6034545898438 L -5173.6640625 574.4903564453125 L -5173.6640625 582 L -5164.328125 582 L -5164.328125 574.4968872070312 L -5169 570.6034545898438 M -5169 568 L -5161 574.6669921875 L -5162.328125 574.6669921875 L -5162.328125 583.3330078125 C -5162.328125 583.701171875 -5162.6328125 584 -5163 584 L -5175 584 C -5175.3671875 584 -5175.6640625 583.701171875 -5175.6640625 583.3330078125 L -5175.6640625 574.6669921875 L -5177 574.6669921875 L -5169 568 Z" stroke="none" fill="#767676"/>
+      </g>
+      <line id="선_221" data-name="선 221" y2="6" transform="translate(7.999 9.959)" fill="none" stroke="#767676" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <rect id="사각형_24142" data-name="사각형 24142" width="24" height="24" transform="translate(0 -0.292)" fill="none" opacity="0.2"/>
+  </g>
+</svg>

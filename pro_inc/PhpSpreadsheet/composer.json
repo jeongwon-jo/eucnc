@@ -1,0 +1,10 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.28",
+		"ext-mbstring": "*",
+		"ext-json": "*",
+		"ext-curl": "*",
+		"ext-mysqli": "*",
+		"ext-zip": "*"
+	}
+}
